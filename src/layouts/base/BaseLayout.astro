@@ -1,6 +1,7 @@
 ---
 import "../../styles/global.css";
 import Analytics from "@vercel/analytics/astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
 import { appearanceConfig, siteConfig } from "../../config";
 import { appearanceCssVariables } from "../../modules/textmode/core/css-vars";
 
@@ -60,6 +61,7 @@ const appearanceCss = appearanceCssVariables(appearanceConfig);
   <body>
     <slot />
     <Analytics />
+    <SpeedInsights />
     <script>
       import { effectsConfig, textmodeConfig } from "../../config";
 
