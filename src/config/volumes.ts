@@ -19,9 +19,11 @@ export const defaultVolumeConfig = (number: number): VolumeConfig => ({
   listLabel: `Volume ${number}`,
   phileSort: {
     by: "date",
-    direction: "desc"
+    direction: "desc",
   },
-  postscript: ["  ──[ EOF ]──────────────────────────────────────────────────────────────────//───"]
+  postscript: [
+    "  ──[ EOF ]──────────────────────────────────────────────────────────────────//───",
+  ],
 });
 
 export const volumeConfigs = new Map<number, VolumeConfig>([
@@ -29,80 +31,80 @@ export const volumeConfigs = new Map<number, VolumeConfig>([
     0,
     {
       title: "Security Research",
-      listLabel: "Volume 0 - Security Research",
+      listLabel: "ArcGis Pro",
       phileSort: {
         by: "order",
-        direction: "asc"
+        direction: "asc",
       },
       postscript: [
         "  ──[ 0x51 ]─────────────────────────────────────────────────────────────────//───",
         "",
         "  What is this unseen flame of darkness whose sparks are the stars?",
         "",
-        "  Tagore, Stray Birds"
-      ]
-    }
+        "  Tagore, Stray Birds",
+      ],
+    },
   ],
   [
     1,
     {
       title: "Historical Philes",
-      listLabel: "Volume 1 - Historical Philes",
+      listLabel: "Qgis",
       postscript: [
         "  ──[ EOF ]──────────────────────────────────────────────────────────────────//───",
         "",
         "  Life can only be understood backwards;",
         "  but it must be lived forwards.",
         "",
-        "  Søren Kierkegaard"
+        "  Søren Kierkegaard",
       ],
       phileSort: {
         by: "date",
-        direction: "desc"
+        direction: "desc",
       },
-      entryPrefix: "A"
-    }
+      entryPrefix: "A",
+    },
   ],
   [
     2,
     {
       title: "Year-End Wrap-ups",
-      listLabel: "Volume 2 - Year-End Wrap-ups",
+      listLabel: "Global Mapper",
       postscript: [
         "  ──[ 0x146 ]────────────────────────────────────────────────────────────────//───",
         "",
         "  Let this be my last word,",
         "  that I trust in thy love.",
         "",
-        "  Tagore, Stray Birds"
+        "  Tagore, Stray Birds",
       ],
       phileSort: {
         by: "date",
-        direction: "desc"
+        direction: "desc",
       },
-      entryLabel: "year"
-    }
+      entryLabel: "year",
+    },
   ],
   [
     3,
     {
       title: "Chromatic Philes",
-      listLabel: "Volume 3 - Chromatic Philes",
+      listLabel: "Dips 7.0",
       postscript: [
         "  ──[ SGR ]──────────────────────────────────────────────────────────────────//───",
         "",
         "  Color is only another byte of pressure",
         "  applied to a line that was already executable.",
         "",
-        "  Entropic notes"
+        "  Entropic notes",
       ],
       phileSort: {
         by: "date",
-        direction: "desc"
+        direction: "desc",
       },
-      entryPrefix: "C"
-    }
-  ]
+      entryPrefix: "C",
+    },
+  ],
 ]);
 
 export function volumeConfig(number: number): VolumeConfig {
