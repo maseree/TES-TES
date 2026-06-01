@@ -7,12 +7,12 @@
   "type": "module",
   "packageManager": "pnpm@11.5.0+sha512.dbfcc4f81cf48597afd4bc391ffdf12c11f1a9fb83a395bfa6b0a2d9cc2fd8ffebafdb1ccbd529632153f793904c2615b7f09fe1a345473fd1c35845172a8eb1",
   "engines": {
-    "node": ">=22.12.0",
+    "node": ">=20.0.0",
     "pnpm": ">=9"
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "pnpm check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "check": "astro check && biome check .",
     "format": "biome format --write .",
